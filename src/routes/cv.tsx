@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Briefcase, GraduationCap, Sparkles, User } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
+import fotoCv from "@/assets/Foto CV.jpeg";
 
 export const Route = createFileRoute("/cv")({
   head: () => ({
@@ -17,11 +18,13 @@ export const Route = createFileRoute("/cv")({
 
 const personalData = [
   { label: "Name", value: "Lathifa Ramadanti Putri" },
-  { label: "Nickname", value: "Fafa" },
-  { label: "Birth", value: "—" },
-  { label: "Address", value: "—" },
-  { label: "Email", value: "—" },
-  { label: "Phone", value: "—" },
+  { label: "Nickname", value: "Embuy" },
+  { label: "Birth", value: "26 August 2009" },
+  { label: "Address", value: "Singosari X, No. 26" },
+  { label: "Email", value: "lathifafafa1@gmail.com" },
+  { label: "Phone", value: "+62 888 064 550 40" },
+  { label: "Figma", value: "lathifa fafa" },
+  { label: "LinkedIn", value: "lathifaramadanti" },
 ];
 
 const education = [
@@ -30,15 +33,15 @@ const education = [
   { school: "SDN Pleburan 02", year: "2016 – 2021" },
 ];
 
-const experience = ["UI design projects", "School IT projects"];
-const skills = ["UI/UX Design", "Canva & Figma", "HTML, CSS", "Editing"];
+const experience = ["UI design projects", "School IT projects", "Study Grow Design (11th Final Grade of National INNOVERA Competition)", "Smart Food Safety Detector (Runner Up of National IONIC Competition - Proposal)"];
+const skills = ["UI/UX Design", "Figma", "Canva", "HTML, CSS", "Editing"];
 
 function CVPage() {
   return (
     <section className="px-4 py-12">
       <SectionHeader
         eyebrow="Curriculum Vitae"
-        title="My CV 📄"
+        title="My CV"
         subtitle="Sebuah ringkasan singkat tentang aku."
       />
 
@@ -48,13 +51,19 @@ function CVPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
-          className="md:col-span-1 rounded-3xl border border-border/60 bg-gradient-pink p-6 shadow-cute"
+          className="md:col-span-1 rounded-3xl border border-border/60 bg-gradient-pink p-6 shadow-cute flex flex-col items-center text-center"
         >
-          <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-card shadow-soft">
-            <User className="h-5 w-5" />
+          <div className="mb-3 flex h-16 w-16 items-center justify-center rounded-full overflow-hidden shadow-soft border-2 border-foreground/40">
+            <img
+              src={fotoCv}
+              alt="Lathifa Ramadanti Putri (Fafa) - CV Photo"
+              width={64}
+              height={64}
+              className="h-full w-full object-cover object-top"
+            />
           </div>
           <h2 className="font-display text-xl font-semibold">Personal Data</h2>
-          <dl className="mt-4 space-y-2 text-sm">
+          <dl className="mt-4 space-y-2 text-sm w-full">
             {personalData.map((p) => (
               <div key={p.label} className="flex items-center justify-between rounded-xl bg-card/70 px-3 py-2 backdrop-blur">
                 <dt className="text-foreground/70">{p.label}</dt>
@@ -131,7 +140,7 @@ function CVPage() {
             className="rounded-3xl bg-gradient-cream p-6 text-center shadow-soft"
           >
             <p className="font-display text-2xl italic">
-              "Long story short, I survived" 🌷
+              "Long story short, I survived -Taylor Swift"
             </p>
           </motion.blockquote>
         </div>

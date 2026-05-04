@@ -18,7 +18,7 @@ const skills = [
   { name: "HTML", value: 20, color: "bg-gradient-pink" },
   { name: "CSS", value: 20, color: "bg-gradient-blue" },
   { name: "JavaScript", value: 20, color: "bg-gradient-cream" },
-  { name: "UI/UX Design & Editing", value: 80, color: "bg-gradient-pink" },
+  { name: "UI/UX Design & Editing", value: 75, color: "bg-gradient-pink" },
 ];
 
 function SkillsPage() {
@@ -26,7 +26,7 @@ function SkillsPage() {
     <section className="px-4 py-12">
       <SectionHeader
         eyebrow="Skills"
-        title="Apa yang sedang aku pelajari ✎"
+        title="Apa yang sedang aku pelajari"
         subtitle="Setiap hari sedikit demi sedikit — fokus utama di UI/UX Design."
       />
 

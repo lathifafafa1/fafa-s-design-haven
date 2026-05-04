@@ -1,8 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Sparkles, ArrowRight, Heart } from "lucide-react";
-import profile from "@/assets/profile.jpg";
-import { Doodles } from "@/components/Doodles";
+import profile from "@/assets/photo_profile.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,7 +18,6 @@ export const Route = createFileRoute("/")({
 function HomePage() {
   return (
     <section className="relative px-4 pt-10 md:pt-16">
-      <Doodles />
       <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -39,7 +37,7 @@ function HomePage() {
             "Designing simple ideas into meaningful experiences."
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-foreground/80">
-            Saya adalah siswi SMK jurusan SIJA yang memiliki minat besar di bidang UI/UX Design.
+            Saya adalah siswi SMKN 7 Semarang jurusan SIJA yang memiliki minat besar di bidang UI/UX Design.
             Saya senang mempelajari bagaimana desain dapat memberikan pengalaman yang nyaman dan
             menarik bagi pengguna. Dengan semangat belajar yang tinggi, saya terus mengembangkan
             kemampuan untuk menjadi UI/UX Designer profesional di masa depan.
@@ -63,7 +61,7 @@ function HomePage() {
 
           <div className="mt-8 flex items-center gap-4 text-sm text-muted-foreground">
             <div>
-              <p className="font-display text-2xl font-bold text-foreground">3+</p>
+              <p className="font-display text-2xl font-bold text-foreground">6+</p>
               <p>Projects</p>
             </div>
             <div className="h-8 w-px bg-border" />
@@ -124,7 +122,7 @@ function HomePage() {
       {/* Quick highlight strip */}
       <div className="mx-auto mt-16 grid max-w-6xl gap-4 md:grid-cols-3">
         {[
-          { emoji: "🌷", title: "Friendly Design", desc: "Soft, warm, dan mudah didekati." },
+          { emoji: "🌷", title: "Friendly Design", desc: "Soft, warm, dan mudah bergaul." },
           { emoji: "🧩", title: "Problem Solver", desc: "Mendesain dari kebutuhan pengguna." },
           { emoji: "🌱", title: "Always Learning", desc: "Setiap hari = belajar hal baru." },
         ].map((c, i) => (
