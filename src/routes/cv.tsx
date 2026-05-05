@@ -18,7 +18,7 @@ export const Route = createFileRoute("/cv")({
 
 const personalData = [
   { label: "Name", value: "Lathifa Ramadanti Putri" },
-  { label: "Nickname", value: "Embuy" },
+  { label: "Nickname", value: "Fafa" },
   { label: "Birth", value: "26 August 2009" },
   { label: "Address", value: "Singosari X, No. 26" },
   { label: "Email", value: "lathifafafa1@gmail.com" },
