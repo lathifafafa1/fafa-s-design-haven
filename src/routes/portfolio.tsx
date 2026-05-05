@@ -3,34 +3,34 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useState } from "react";
 import { SectionHeader } from "@/components/SectionHeader";
-import smoothiesPink from "@/assets/Smoothies Pink.png";
-import smoothiesYellow from "@/assets/Smoothies Yellow.png";
-import smoothiesGreen from "@/assets/Smoothies Green.png";
-import smoothiesBlue from "@/assets/Smoothies Blue.png";
-import jacketGreen from "@/assets/Jacket Green.png";
-import jacketOrange from "@/assets/Jacket Orange.png";
-import jacketYellow from "@/assets/Jacket Yellow.png";
-import donutPurple from "@/assets/Donut Purple.png";
-import donutGreen from "@/assets/Donut Green.png";
-import jordanPink from "@/assets/Jordan Pink.png";
-import jordanAbu from "@/assets/Jordan Abu.png";
-import bioskop1 from "@/assets/Bioskop 1.png";
-import bioskop2 from "@/assets/Bioskop 2.png";
-import sinaw1 from "@/assets/Sinaw 1.png";
-import sinaw2 from "@/assets/Sinaw 2.png";
-import sinaw3 from "@/assets/Sinaw 3.png";
-import sinaw4 from "@/assets/Sinaw 4.png";
-import studyGrow1 from "@/assets/Study Grow 1.png";
-import studyGrow2 from "@/assets/Study Grow 2.png";
-import studyGrow3 from "@/assets/Study Grow 3.png";
-import studyGrow4 from "@/assets/Study Grow 4.png";
-import aman1 from "@/assets/Aman 1.png";
-import aman2 from "@/assets/Aman 2.png";
-import perluDicek1 from "@/assets/Perlu Dicek 1.png";
-import perluDicek2 from "@/assets/Perlu DIcek 2.png";
-import tidakLayak1 from "@/assets/Tidak Layak 1.png";
-import tidakLayak2 from "@/assets/Tidak Layak 2.png";
-import jordanHijau from "@/assets/Jordan Hijau.png";
+import smoothiesPink from "@/assets/Smoothies-Pink.png";
+import smoothiesYellow from "@/assets/Smoothies-Yellow.png";
+import smoothiesGreen from "@/assets/Smoothies-Green.png";
+import smoothiesBlue from "@/assets/Smoothies-Blue.png";
+import jacketGreen from "@/assets/Jacket-Green.png";
+import jacketOrange from "@/assets/Jacket-Orange.png";
+import jacketYellow from "@/assets/Jacket-Yellow.png";
+import donutPurple from "@/assets/Donut-Purple.png";
+import donutGreen from "@/assets/Donut-Green.png";
+import jordanPink from "@/assets/Jordan-Pink.png";
+import jordanAbu from "@/assets/Jordan-Abu.png";
+import bioskop1 from "@/assets/Bioskop-1.png";
+import bioskop2 from "@/assets/Bioskop-2.png";
+import sinaw1 from "@/assets/Sinaw-1.png";
+import sinaw2 from "@/assets/Sinaw-2.png";
+import sinaw3 from "@/assets/Sinaw-3.png";
+import sinaw4 from "@/assets/Sinaw-4.png";
+import studyGrow1 from "@/assets/Study-Grow-1.png";
+import studyGrow2 from "@/assets/Study-Grow-2.png";
+import studyGrow3 from "@/assets/Study-Grow-3.png";
+import studyGrow4 from "@/assets/Study-Grow-4.png";
+import aman1 from "@/assets/Aman-1.png";
+import aman2 from "@/assets/Aman-2.png";
+import perluDicek1 from "@/assets/Perlu-Dicek-1.png";
+import perluDicek2 from "@/assets/Perlu-DIcek-2.png";
+import tidakLayak1 from "@/assets/Tidak-Layak-1.png";
+import tidakLayak2 from "@/assets/Tidak-Layak-2.png";
+import jordanHijau from "@/assets/Jordan-Hijau.png";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -62,7 +62,7 @@ const projects = [
     gallery: [aman1, aman2, perluDicek1, perluDicek2, tidakLayak1, tidakLayak2],
   },
   {
-    title: "Smoothies Design",
+    title: "Smoothies-Design",
     desc: "UI design for a smoothies & healthy food app with a fresh, vibrant look.",
     img: smoothiesPink,
     tag: "UI/UX",
