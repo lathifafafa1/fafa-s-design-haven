@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Briefcase, GraduationCap, Sparkles, User } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
-import fotoCv from "@/assets/Foto CV.jpeg";
+import fotoCv from "@/assets/foto-cv.jpeg";
 
 export const Route = createFileRoute("/cv")({
   head: () => ({
