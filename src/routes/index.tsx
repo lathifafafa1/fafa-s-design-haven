@@ -6,9 +6,9 @@ import profile from "@/assets/photo_profile.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Fafa · UI/UX Designer Portfolio" },
+      { title: "Portofolio Fafa Lathifa · UI/UX Designer" },
       { name: "description", content: "Halo! Saya Fafa, calon UI/UX Designer yang suka mendesain pengalaman digital yang simple dan bermakna." },
-      { property: "og:title", content: "Fafa · UI/UX Designer Portfolio" },
+      { property: "og:title", content: "Portofolio Fafa Lathifa · UI/UX Designer" },
       { property: "og:description", content: "Designing simple ideas into meaningful experiences." },
     ],
   }),

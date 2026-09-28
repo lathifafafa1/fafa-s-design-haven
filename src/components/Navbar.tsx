@@ -20,7 +20,7 @@ export function Navbar() {
           <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-pink shadow-soft">
             <Heart className="h-4 w-4 fill-primary-foreground text-primary-foreground" />
           </span>
-          <span>Fafa</span>
+          <span>Portofolio Fafa Lathifa</span>
         </Link>
 
         <ul className="hidden items-center gap-1 md:flex">
