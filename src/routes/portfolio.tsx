@@ -143,7 +143,7 @@ function PortfolioPage() {
       <SectionHeader
         eyebrow="Portfolio"
         title="My little projects"
-        subtitle="Beberapa karya kecil yang aku buat sambil belajar."
+        subtitle="A few small creations i made while learning."
       />
 
       <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-6">
@@ -154,9 +154,8 @@ function PortfolioPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className={`flex flex-col overflow-hidden rounded-3xl border border-border/60 bg-card shadow-soft transition-transform hover:-translate-y-1 hover:shadow-cute group ${
-              i < 2 ? "md:col-span-3" : "md:col-span-2"
-            }`}
+            className={`flex flex-col overflow-hidden rounded-3xl border border-border/60 bg-card shadow-soft transition-transform hover:-translate-y-1 hover:shadow-cute group ${i < 2 ? "md:col-span-3" : "md:col-span-2"
+              }`}
           >
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
@@ -206,19 +205,17 @@ function PortfolioPage() {
             </button>
 
             {/* Main Image */}
-            <div className={`relative w-full overflow-hidden bg-black ${
-              openGallery === 4 
-                ? "aspect-auto max-h-[90vh] flex items-center justify-center" 
+            <div className={`relative w-full overflow-hidden bg-black ${openGallery === 4
+                ? "aspect-auto max-h-[90vh] flex items-center justify-center"
                 : "aspect-square md:aspect-auto md:max-h-[70vh]"
-            }`}>
+              }`}>
               <img
                 src={projects[openGallery].gallery![currentImageIndex]}
                 alt={`${projects[openGallery].title} - Image ${currentImageIndex + 1}`}
-                className={`${
-                  openGallery === 4 
-                    ? "max-h-full max-w-full object-contain" 
+                className={`${openGallery === 4
+                    ? "max-h-full max-w-full object-contain"
                     : "h-full w-full object-contain"
-                }`}
+                  }`}
                 width={openGallery === 4 ? 1080 : 768}
                 height={openGallery === 4 ? 1350 : 576}
               />
@@ -258,11 +255,10 @@ function PortfolioPage() {
                       key={idx}
                       type="button"
                       onClick={() => setCurrentImageIndex(idx)}
-                      className={`h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg border-2 transition-all ${
-                        idx === currentImageIndex
+                      className={`h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg border-2 transition-all ${idx === currentImageIndex
                           ? "border-primary"
                           : "border-border/40"
-                      }`}
+                        }`}
                     >
                       <img
                         src={img}

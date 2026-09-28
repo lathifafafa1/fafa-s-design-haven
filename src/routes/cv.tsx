@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap, Sparkles, User } from "lucide-react";
+import { Briefcase, GraduationCap, Sparkles, User, FileText, ExternalLink } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 import fotoCv from "@/assets/foto-cv.jpeg";
 
@@ -24,7 +24,7 @@ const personalData = [
   { label: "Email", value: "lathifafafa1@gmail.com" },
   { label: "Phone", value: "+62 888 064 550 40" },
   { label: "Figma", value: "lathifa fafa" },
-  { label: "LinkedIn", value: "lathifaramadanti" },
+  { label: "LinkedIn", value: "fafa lathifa" },
 ];
 
 const education = [
@@ -42,8 +42,25 @@ function CVPage() {
       <SectionHeader
         eyebrow="Curriculum Vitae"
         title="My CV"
-        subtitle="Sebuah ringkasan singkat tentang aku."
+        subtitle="A brief summary about me."
       />
+
+      <div className="mb-8 mt-6 flex justify-center">
+        <motion.a
+          href="https://drive.google.com/file/d/1R8-llZD7dhiu2NItHd-ghHJjSS9OBhpD/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-pink px-6 py-3 text-sm font-display font-bold text-foreground shadow-cute transition-all hover:shadow-lg border border-border/40"
+        >
+          <FileText className="h-4 w-4 text-foreground" />
+          <span>Open CV PDF (Google Drive)</span>
+          <ExternalLink className="h-3.5 w-3.5 text-foreground/80 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        </motion.a>
+      </div>
 
       <div className="mx-auto grid max-w-5xl gap-5 md:grid-cols-3">
         <motion.div

@@ -37,10 +37,7 @@ function HomePage() {
             "Designing simple ideas into meaningful experiences."
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-foreground/80">
-            Saya adalah siswi SMKN 7 Semarang jurusan SIJA yang memiliki minat besar di bidang UI/UX Design.
-            Saya senang mempelajari bagaimana desain dapat memberikan pengalaman yang nyaman dan
-            menarik bagi pengguna. Dengan semangat belajar yang tinggi, saya terus mengembangkan
-            kemampuan untuk menjadi UI/UX Designer profesional di masa depan.
+            "I am a student at SMKN 7 Semarang majoring in SIJA (Software and Information Network Engineering) with a strong passion for UI/UX Design. I enjoy exploring how design can create seamless and engaging user experiences. Driven by a high continuous learning spirit, I am actively honing my skills to become a professional UI/UX Designer in the future.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -122,9 +119,9 @@ function HomePage() {
       {/* Quick highlight strip */}
       <div className="mx-auto mt-16 grid max-w-6xl gap-4 md:grid-cols-3">
         {[
-          { emoji: "🌷", title: "Friendly Design", desc: "Soft, warm, dan mudah bergaul." },
-          { emoji: "🧩", title: "Problem Solver", desc: "Mendesain dari kebutuhan pengguna." },
-          { emoji: "🌱", title: "Always Learning", desc: "Setiap hari = belajar hal baru." },
+          { emoji: "🌷", title: "Friendly Design", desc: "Soft, warm, and friendly." },
+          { emoji: "🧩", title: "Problem Solver", desc: "Solving user needs through design." },
+          { emoji: "🌱", title: "Always Learning", desc: "Always learning new things everyday." },
         ].map((c, i) => (
           <motion.div
             key={c.title}

@@ -15,9 +15,9 @@ export const Route = createFileRoute("/skills")({
 });
 
 const skills = [
-  { name: "HTML", value: 20, color: "bg-gradient-pink" },
-  { name: "CSS", value: 20, color: "bg-gradient-blue" },
-  { name: "JavaScript", value: 20, color: "bg-gradient-cream" },
+  { name: "HTML", value: 50, color: "bg-gradient-pink" },
+  { name: "CSS", value: 45, color: "bg-gradient-blue" },
+  { name: "JavaScript", value: 30, color: "bg-gradient-cream" },
   { name: "UI/UX Design & Editing", value: 75, color: "bg-gradient-pink" },
 ];
 
@@ -26,8 +26,8 @@ function SkillsPage() {
     <section className="px-4 py-12">
       <SectionHeader
         eyebrow="Skills"
-        title="Apa yang sedang aku pelajari"
-        subtitle="Setiap hari sedikit demi sedikit — fokus utama di UI/UX Design."
+        title="What I'm currently learning"
+        subtitle="A little bit every day — focusing on UI/UX Design."
       />
 
       <div className="mx-auto max-w-3xl space-y-6 rounded-3xl border border-border/60 bg-card p-6 shadow-soft md:p-8">
@@ -56,8 +56,7 @@ function SkillsPage() {
         ))}
 
         <div className="mt-4 rounded-2xl bg-gradient-cream p-4 text-sm text-foreground/80">
-          🌱 <span className="font-medium">Catatan:</span> Persentase ini menunjukkan tahap belajarku
-          sekarang — selalu bertumbuh setiap harinya!
+          🌱 <span className="font-medium">Note:</span> This percentage indicates my current learning stage — always growing every day!
         </div>
       </div>
     </section>

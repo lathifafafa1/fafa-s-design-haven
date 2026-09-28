@@ -8,6 +8,12 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { fileURLToPath, URL } from "node:url";
 
 export default defineConfig({
+  cloudflare: false,
+  tanstackStart: {
+    prerender: {
+      enabled: true,
+    },
+  },
   vite: {
     resolve: {
       alias: {

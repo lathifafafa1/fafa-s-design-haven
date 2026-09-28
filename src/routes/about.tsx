@@ -19,19 +19,19 @@ const education = [
   { school: "TK Kuntum Mekar", year: "2015 – 2016" },
   { school: "SDN Pleburan 02", year: "2016 – 2021" },
   { school: "SMPN 2 Semarang", year: "2021 – 2024" },
-  { school: "SMKN 7 Semarang", year: "2024 – sekarang" },
+  { school: "SMKN 7 Semarang", year: "2024 – present" },
 ];
 
 const hobbies = [
-  { emoji: "🎧", text: "Mendengarkan musik" },
-  { emoji: "🎨", text: "Mendesain (UI sederhana / Canva)" },
-  { emoji: "📱", text: "Eksplor aplikasi & tampilan digital" },
+  { emoji: "🎧", text: "Listening to music" },
+  { emoji: "🎨", text: "Designing (simple UI / Canva)" },
+  { emoji: "📱", text: "Exploring applications & digital interfaces" },
 ];
 
-const softSkills = ["Komunikasi", "Cepat belajar", "Kreatif", "Teliti", "Teamwork"];
+const softSkills = ["Communication", "Fast learner", "Creative", "Detail-oriented", "Teamwork"];
 const hardSkills = [
   "UI/UX Design (Figma, Canva)",
-  "Editing desain",
+  "Editing designs",
   "HTML, CSS, basic JavaScript",
   "Wireframing & prototyping",
 ];
@@ -73,17 +73,17 @@ function AboutPage() {
     <section className="px-4 py-12">
       <SectionHeader
         eyebrow="About me"
-        title="Sedikit cerita tentang aku ✿"
-        subtitle="Keluarga, sekolah, hobi, dan mimpi — semua yang membentuk Fafa hari ini."
+        title="A short story about me ✿"
+        subtitle="Family, school, hobbies, and dreams — everything that shapes Fafa today."
       />
 
       <div className="mx-auto grid max-w-6xl gap-5 md:grid-cols-2">
-        <Card icon={Heart} title="Keluarga" tone="pink">
-          Saya berasal dari keluarga yang sederhana dan suportif, yang selalu mendukung saya
-          dalam pendidikan dan pengembangan diri.
+        <Card icon={Heart} title="Family" tone="pink">
+          I come from a simple and supportive family, who always supports me
+          in education and self-development.
         </Card>
 
-        <Card icon={GraduationCap} title="Pendidikan" tone="blue" delay={0.05}>
+        <Card icon={GraduationCap} title="Education" tone="blue" delay={0.05}>
           <ul className="space-y-2">
             {education.map((e) => (
               <li key={e.school} className="flex items-center justify-between gap-3 rounded-xl bg-muted/60 px-3 py-2">
@@ -94,7 +94,7 @@ function AboutPage() {
           </ul>
         </Card>
 
-        <Card icon={Sparkles} title="Hobi" tone="cream" delay={0.1}>
+        <Card icon={Sparkles} title="Hobbies" tone="cream" delay={0.1}>
           <ul className="grid gap-2">
             {hobbies.map((h) => (
               <li key={h.text} className="flex items-center gap-3 rounded-xl bg-muted/60 px-3 py-2">
@@ -105,14 +105,14 @@ function AboutPage() {
           </ul>
         </Card>
 
-        <Card icon={Target} title="Minat & Cita-cita" tone="pink" delay={0.15}>
+        <Card icon={Target} title="Interests & Aspirations" tone="pink" delay={0.15}>
           <p className="mb-2">
             <span className="font-medium">Interest:</span> UI/UX Designer
           </p>
           <p>
-            Saya bercita-cita menjadi seorang UI/UX Designer yang mampu menciptakan desain aplikasi
-            atau website yang tidak hanya menarik secara visual, tetapi juga mudah digunakan dan
-            memberikan pengalaman terbaik bagi pengguna.
+            I aspire to become a UI/UX Designer who can create application or website designs
+            that are not only visually appealing but also easy to use and
+            provide the best experience for users.
           </p>
         </Card>
 
