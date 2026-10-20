@@ -14,6 +14,20 @@ export default defineConfig({
       enabled: true,
     },
   },
+  plugins: [
+    {
+      name: "rolldown-to-rollup-adapter",
+      enforce: "post",
+      configEnvironment(_name, config) {
+        if (config.build?.rolldownOptions && !config.build?.rollupOptions?.input) {
+          config.build.rollupOptions = {
+            ...config.build.rollupOptions,
+            ...config.build.rolldownOptions,
+          };
+        }
+      },
+    },
+  ],
   vite: {
     resolve: {
       alias: {
